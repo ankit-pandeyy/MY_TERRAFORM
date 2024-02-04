@@ -111,7 +111,7 @@ resource "aws_instance" "web" {
     sudo yum install -y httpd
     sudo chkconfig httpd on
     sudo service httpd start
-    echo "<h1>Hey Himanshu,successfully Deployed EC2 With Terraform</h1>" | sudo tee /var/www/html/index.html
+    echo "<h1>Hey,successfully Deployed EC2 With Terraform</h1>" | sudo tee /var/www/html/index.html
     EOF
   tags = {
     Name = "Terraform-01"
